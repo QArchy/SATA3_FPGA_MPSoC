@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>I2C Module</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" type="text/css" href="./_register_reference.css">
+<script src="xilfunctions.js" type="text/javascript"></script>
+</head>
+<body>
+<p class=header><a href=# onclick=gotoTopic("_overview.html")>Zynq UltraScale+ Devices Register Reference</a> &gt; <a href=# onclick=gotoTopic("_module_summary.html")>Module Summary</a> > I2C Module</p><h1>I2C Module</h1>
+<h2>I2C Module Description</h2>
+<table class=noborder>
+<tr valign=top><th width=20% class=sumparam>Module Name</th><td width=80% class=noborder>I2C Module</td></tr>
+<tr valign=top><th width=20% class=sumparam>Modules of this Type</th><td width=80% class=noborder>I2C0, I2C1</td></tr>
+<tr valign=top><th class=sumparam>Base Address</th><td class=noborder><span class="hex">0x00FF020000</span> (I2C0)<br/><span class="hex">0x00FF030000</span> (I2C1)</td></tr>
+<tr valign=top><th class=sumparam>Description</th><td class=noborder>Inter Integrated Circuit (I2C) Controller, I2C 0 Controller</td></tr>
+</table>
+<h2>I2C Module Register Summary</h2>
+<table>
+<tr valign=top><th width=20%>Register Name</th><th width=10%>Address</th><th width=10%>Width</th><th width=10%>Type</th><th width=10%>Reset Value</th><th width=40%>Description</th></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___control_reg.html")>Control_Reg</a></td><td class="hex center">0x0000000000</td><td class="center">16</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>Control Register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___status_reg.html")>Status_Reg</a></td><td class="hex center">0x0000000004</td><td class="center">16</td><td class="tooltip3rr">ro<span class="tooltiptext2rr">Read-only</span></td><td class="hex center">0x00000000</td><td>Status register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___i2c_address.html")>I2C_Address</a></td><td class="hex center">0x0000000008</td><td class="center">16</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>IIC Address register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___i2c_data.html")>I2C_Data</a></td><td class="hex center">0x000000000C</td><td class="center">16</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>IIC data register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___interrupt_status.html")>Interrupt_Status</a></td><td class="hex center">0x0000000010</td><td class="center">16</td><td class="tooltip3rr">wtc<span class="tooltiptext2rr">Readable, write a 1 to clear</span></td><td class="hex center">0x00000000</td><td>IIC interrupt status register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___transfer_size.html")>Transfer_Size</a></td><td class="hex center">0x0000000014</td><td class="center"> 8</td><td class="tooltip3rr">rw<span class="tooltiptext2rr">Normal read/write</span></td><td class="hex center">0x00000000</td><td>Transfer Size Register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___slave_mon_pause.html")>Slave_Mon_Pause</a></td><td class="hex center">0x0000000018</td><td class="center"> 8</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>Slave Monitor Pause</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___time_out.html")>Time_Out</a></td><td class="hex center">0x000000001C</td><td class="center"> 8</td><td class="tooltip3rr">rw<span class="tooltiptext2rr">Normal read/write</span></td><td class="hex center">0x0000001F</td><td>I/O Clock Signal (SCL) Timeout Period</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___intrpt_mask.html")>Intrpt_Mask</a></td><td class="hex center">0x0000000020</td><td class="center">16</td><td class="tooltip3rr">ro<span class="tooltiptext2rr">Read-only</span></td><td class="hex center">0x000002FF</td><td>Interrupt Mask</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___intrpt_enable.html")>Intrpt_Enable</a></td><td class="hex center">0x0000000024</td><td class="center">16</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>Interrupt Enable Register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___intrpt_disable.html")>Intrpt_Disable</a></td><td class="hex center">0x0000000028</td><td class="center">16</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>Interrupt Disable Register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("i2c___glitch_filter.html")>Glitch_Filter</a></td><td class="hex center">0x000000002C</td><td class="center">16</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000005</td><td>Glitch Filter Control Register<br/>It is used for setting the length of the glitch filter shift register.<br/>If the length of glitch filter shift register is set to zero (0x0) then the glitch filter is bypassed.</td></tr>
+</table>
+<p id=foot class=footer></p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>AACR (DDR_PHY) Register</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" type="text/css" href="./_register_reference.css">
+<script src="xilfunctions.js" type="text/javascript"></script>
+</head>
+<body>
+<p class=header><a href=# onclick=gotoTopic("_overview.html")>Zynq UltraScale+ Devices Register Reference</a> &gt; <a href=# onclick=gotoTopic("_module_summary.html")>Module Summary</a> &gt; <a href=# onclick=gotoTopic("mod___ddr_phy.html")>DDR_PHY Module</a> &gt; AACR (DDR_PHY) Register</p><h1>AACR (DDR_PHY) Register</h1>
+<h2>AACR (DDR_PHY) Register Description</h2>
+<table class=noborder>
+<tr valign=top><th width=20% class=sumparam>Register Name</th><td width=80% class=noborder>AACR</td></tr>
+<tr valign=top><th class=sumparam>Relative Address</th><td class="noborder hex" id="registerOffset">0x00000000A0</td></tr>
+<tr valign=top><th class=sumparam>Absolute Address</th><td class=noborder>
+<span class="hex">0x00FD0800A0</span> (DDR_PHY)
+</td></tr>
+<tr valign=top><th class=sumparam>Width</th><td class=noborder>32</td></tr>
+<tr valign=top><th class=sumparam>Type</th><td class="tooltip2rr noborder">rw<span class="tooltiptext2rr">Normal read/write</span></td></tr>
+<tr valign=top><th class=sumparam>Reset Value</th><td class="noborder hex">0x000000FF</td></tr>
+<tr valign=top><th class=sumparam>Description</th><td class=noborder>Anti-Aging Control Register</td></tr>
+</table>
+<p></p>
+<h2>AACR (DDR_PHY) Register Bit-Field Summary</h2>
+<table>
+<tr valign=top><th width=20%>Field Name</th><th width=10%>Bits</th><th width=10%>Type</th><th width=10%>Reset Value</th><th width=50%>Description</th></tr>
+<tr valign=top><td>AAOENC</td><td class="center">31</td><td class="tooltip3rr">rw<span class="tooltiptext2rr">Normal read/write</span></td><td class="hex center">0x0</td><td>Anti-Aging PAD Output Enable Control: Enables if set anti-aging<br/>toggling on the pad output enable signal 'ctl_oe_n' going into the<br/>DATX8s. This will increase power consumption for the anti-aging<br/>feature.</td></tr>
+<tr valign=top><td>AAENC</td><td class="center">30</td><td class="tooltip3rr">rw<span class="tooltiptext2rr">Normal read/write</span></td><td class="hex center">0x0</td><td>Anti-Aging Enable Control: Enables if set the automatic toggling of the<br/>data going to the DATX8 when the data channel from the<br/>controller/PUB to DATX8 is idle for programmable number of clock<br/>cycles.</td></tr>
+<tr valign=top><td>AATR</td><td class="center">29:0</td><td class="tooltip3rr">rw<span class="tooltiptext2rr">Normal read/write</span></td><td class="hex center">0xFF</td><td>Anti-Aging Toggle Rate: Defines the number of controller clock (ctl_clk)<br/>cycles after which the PUB will toggle the data going to DATX8 if the<br/>data channel between the controller/PUB and DATX8 has been idle for<br/>this long.<br/>The default value of the AATR corresponds to a toggling count of 4096<br/>ctl_clk cycles. For a ctl_clk running at 533MHz the toggle rate will be<br/>approximately 7.68us.</td></tr>
+</table><p id=foot class=footer></p>
+</body>
+</html>

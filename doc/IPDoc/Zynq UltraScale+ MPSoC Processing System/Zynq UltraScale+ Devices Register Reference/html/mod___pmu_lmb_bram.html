@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>PMU_LMB_BRAM Module</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" type="text/css" href="./_register_reference.css">
+<script src="xilfunctions.js" type="text/javascript"></script>
+</head>
+<body>
+<p class=header><a href=# onclick=gotoTopic("_overview.html")>Zynq UltraScale+ Devices Register Reference</a> &gt; <a href=# onclick=gotoTopic("_module_summary.html")>Module Summary</a> > PMU_LMB_BRAM Module</p><h1>PMU_LMB_BRAM Module</h1>
+<h2>PMU_LMB_BRAM Module Description</h2>
+<table class=noborder>
+<tr valign=top><th width=20% class=sumparam>Module Name</th><td width=80% class=noborder>PMU_LMB_BRAM Module</td></tr>
+<tr valign=top><th width=20% class=sumparam>Modules of this Type</th><td width=80% class=noborder>PMU_LMB_RAM</td></tr>
+<tr valign=top><th class=sumparam>Base Address</th><td class=noborder><span class="hex">0x00FFD50000</span> (PMU_LMB_RAM)</td></tr>
+<tr valign=top><th class=sumparam>Description</th><td class=noborder>PMU RAM, PMU Local Memory Bus RAM</td></tr>
+</table>
+<h2>PMU_LMB_BRAM Module Register Summary</h2>
+<table>
+<tr valign=top><th width=20%>Register Name</th><th width=10%>Address</th><th width=10%>Width</th><th width=10%>Type</th><th width=10%>Reset Value</th><th width=40%>Description</th></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ecc_status.html")>ECC_STATUS</a></td><td class="hex center">0x0000000000</td><td class="center">32</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>ECC Status</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ecc_en_irq.html")>ECC_EN_IRQ</a></td><td class="hex center">0x0000000004</td><td class="center">32</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>ECC Enable Interrupt</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ecc_onoff.html")>ECC_ONOFF</a></td><td class="hex center">0x0000000008</td><td class="center">32</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000001</td><td>ECC On-Off Control</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ce_cnt.html")>CE_CNT</a></td><td class="hex center">0x000000000C</td><td class="center">32</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>Correctable Error Counter</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ce_ffd.html")>CE_FFD</a></td><td class="hex center">0x0000000100</td><td class="center">32</td><td class="tooltip3rr">ro<span class="tooltiptext2rr">Read-only</span></td><td class="hex center">0x00000000</td><td>Correctable Error First Failing Data</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ce_ffe.html")>CE_FFE</a></td><td class="hex center">0x0000000180</td><td class="center">32</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>Correctable Error First Failing ECC</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ce_ffa.html")>CE_FFA</a></td><td class="hex center">0x00000001C0</td><td class="center">32</td><td class="tooltip3rr">ro<span class="tooltiptext2rr">Read-only</span></td><td class="hex center">0x00000000</td><td>Correctable Error First Failing Address</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ue_ffd.html")>UE_FFD</a></td><td class="hex center">0x0000000200</td><td class="center">32</td><td class="tooltip3rr">ro<span class="tooltiptext2rr">Read-only</span></td><td class="hex center">0x00000000</td><td>Uncorrectable Error First Failing Data</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ue_ffe.html")>UE_FFE</a></td><td class="hex center">0x0000000280</td><td class="center">32</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>Uncorrectable Error First Failing ECC</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___ue_ffa.html")>UE_FFA</a></td><td class="hex center">0x00000002C0</td><td class="center">32</td><td class="tooltip3rr">ro<span class="tooltiptext2rr">Read-only</span></td><td class="hex center">0x00000000</td><td>Uncorrectable Error First Failing Address Register</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___fi_d.html")>FI_D</a></td><td class="hex center">0x0000000300</td><td class="center">32</td><td class="tooltip3rr">wo<span class="tooltiptext2rr">Write-only</span></td><td class="hex center">0x00000000</td><td>Fault Inject Data</td></tr>
+<tr valign=top><td><a href=# onclick=gotoTopic("pmu_lmb_bram___fi_ecc.html")>FI_ECC</a></td><td class="hex center">0x0000000380</td><td class="center">32</td><td class="tooltip3rr">mixed<span class="tooltiptext2rr">Mixed types. See bit-field details.</span></td><td class="hex center">0x00000000</td><td>Fault Inject ECC</td></tr>
+</table>
+<p id=foot class=footer></p>
+</body>
+</html>
